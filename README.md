@@ -14,12 +14,11 @@ nodejs 后端服务脚手架，用于快速开始后端服务的开发。
 npx prisma migrate dev
 ```
 
-## 项目指令
+## 常用指令
 
-开发
-
+开发，包含自动重载（使用nodemon）
 ```shell
-npm run start
+npm run dev
 ```
 
 构建
