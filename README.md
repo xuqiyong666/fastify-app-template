@@ -16,7 +16,7 @@ npx prisma migrate dev
 
 ## 常用指令
 
-开发，包含自动重载（使用nodemon）
+开发模式启动（包含自动重载, 使用nodemon）
 ```shell
 npm run dev
 ```
@@ -27,7 +27,7 @@ npm run dev
 npm run build
 ```
 
-部署启动
+部署模式启动
 
 ```shell
 npm run serve

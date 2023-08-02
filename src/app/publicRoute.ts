@@ -21,7 +21,21 @@ async function PublicRoute(fastify: FastifyInstance, opts: Object = {}) {
     },
     handler: forward(publicController.sayHi)
   })
-  
+
+  fastify.route({
+    method: "GET",
+    url: "/getDemoTaskList",
+    schema: {
+      querystring: {
+        type: "object",
+        properties: {
+          pageNum: { type: "number" },
+          pageSize: { type: "number" }
+        }
+      }
+    },
+    handler: forward(publicController.getDemoTaskList)
+  })
 }
 
 export default PublicRoute
