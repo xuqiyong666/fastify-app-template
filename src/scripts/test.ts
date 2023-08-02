@@ -1,9 +1,9 @@
-import app from "../application"
+import fastifyApp from "../application"
 
 import { encrypt } from "../utils/AuthUtils"
 
 const main = async () => {
-  await app.ready()
+  await fastifyApp.ready()
 
   await test1()
 }
