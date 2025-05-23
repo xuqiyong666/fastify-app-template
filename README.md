@@ -16,7 +16,7 @@ npx prisma migrate dev
 
 ## 常用指令
 
-开发模式启动（包含自动重载, 使用nodemon）
+开发模式启动（包含自动重载, 使用tsx watch）
 ```shell
 npm run dev
 ```
